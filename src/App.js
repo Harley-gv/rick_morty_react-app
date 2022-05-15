@@ -5,10 +5,6 @@ function App() {
   return (
     <div className='App'>
       <Location />
-
-      <footer className='footer'>
-         <p>hecho por harley con amor estudiante de academlo</p>
-      </footer>
     </div>
   );
 }
