@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './Location.css'
 import tittle from '../img/rick.svg'
 import bg from '../img/bg.svg'
-import Residents from './Residents';
+import Residents from './ResidentList';
 
 
 function Location() {
@@ -23,7 +23,7 @@ function Location() {
     return (
         <div>
 
-            <img src={bg} alt="bg" className='bg' />
+            <img src={bg} alt="bg" className='bg'/>
 
             <div className="header">
 
