@@ -33,7 +33,7 @@ function Location() {
                 <img src={tittle} alt="" className='img' />
 
                 <input type="text" className="input" onChange={e => setId(e.target.value)}
-                    value={id} placeholder='busqueda por id'/>
+                    value={id} placeholder='busqueda por un id entre 1 hasta 126'/>
                 <button type="button" className="btn btn-success" onClick={search} id='btn1' >Buscar</button>
             </div>
 
