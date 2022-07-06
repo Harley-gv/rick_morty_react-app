@@ -8,7 +8,7 @@ import Residents from './ResidentList';
 
 function Location() {
     const [rick, setRick] = useState({})
-    const [id, setId] = useState('')
+    const [id, setId] = useState([])
    
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function Location() {
         axios.get(`https://rickandmortyapi.com/api/location/${id}`).then(res => setRick(res.data))
     }
 
-   
+   console.log(id)
     return (
         <div>
 
@@ -33,7 +33,7 @@ function Location() {
                 <img src={tittle} alt="" className='img' />
 
                 <input type="text" className="input" onChange={e => setId(e.target.value)}
-                    value={id} placeholder='busqueda por city'/>
+                    value={id} placeholder='busqueda por id'/>
                 <button type="button" className="btn btn-success" onClick={search} id='btn1' >Buscar</button>
             </div>
 
